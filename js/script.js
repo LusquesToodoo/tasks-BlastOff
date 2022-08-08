@@ -53,21 +53,21 @@ const components = {
         alt: 'HTML & CSS'
       },
       {
-        img: 'img_cursos/html_css/t3.png',
+        img: 'img_cursos/html_css/t3.PNG',
         img_alternative:['img_cursos/html_css/0.jpg','img_cursos/html_css/1.jpg','img_cursos/html_css/2.jpg'],
         description: 'Desenvolvendo layout com medidas relativas e imagem na borda.',
         link: 'https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%203/index.html',
         alt: 'HTML & CSS'
       },
       {
-        img: 'img_cursos/html_css/t4.png',
+        img: 'img_cursos/html_css/t4.PNG',
         img_alternative:['img_cursos/html_css/0.jpg','img_cursos/html_css/1.jpg','img_cursos/html_css/2.jpg'],
         description: 'Prática da propriedade float.',
         link: 'https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%204/index.html',
         alt: 'HTML & CSS'
       },
       {
-        img: 'img_cursos/html_css/t5.png',
+        img: 'img_cursos/html_css/t5.PNG',
         img_alternative:['img_cursos/html_css/0.jpg','img_cursos/html_css/1.jpg','img_cursos/html_css/2.jpg'],
         description: 'Desenvolvendo layout com propriedades estudadas até então.',
         link: 'https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%205/index.html',
