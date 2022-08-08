@@ -67,6 +67,13 @@ const components = {
         alt: 'HTML & CSS'
       },
       {
+        img: 'img_cursos/html_css/t5.PNG',
+        img_alternative:['img_cursos/html_css/0.jpg','img_cursos/html_css/1.jpg','img_cursos/html_css/2.jpg'],
+        description: 'Desenvolvendo layout com propriedades estudadas até então.',
+        link: 'https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%205/index.html',
+        alt: 'HTML & CSS'
+      },
+      {
         img: 'img_cursos/html_css/t6.png',
         img_alternative:['img_cursos/html_css/0.jpg','img_cursos/html_css/1.jpg','img_cursos/html_css/2.jpg'],
         description: 'Prática com elementos de tabela..',
