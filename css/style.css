@@ -96,14 +96,15 @@ img {
   width: 50px;
 }
 #all-content .desktop-header {
-  height: 500px;
+  height: 650px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-size: cover;
   background-position-x: center;
-  background-image: url(../image/capa.jpg);
+  background-position-y: center;
+  background-image: url(../image/new-capa.jpg);
 }
 #all-content .desktop-header .header-top {
   height: 90px;
@@ -269,6 +270,9 @@ img {
   height: 300px;
   width: 250px;
 }
+#all-content .main .container-spots .spots-link {
+  color: #000;
+}
 #all-content .main .container-spots .spots-container-image {
   height: 185px;
   width: 100%;
@@ -313,6 +317,11 @@ img {
 #all-content .footer > p {
   font-size: 36px;
   color: #fff;
+}
+@media screen and (max-width: 768px) {
+  #all-content .footer > p {
+    font-size: 21px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

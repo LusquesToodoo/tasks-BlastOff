@@ -39,10 +39,38 @@ const components = {
     active: true,
     spots: [
       {
-        img: false,
+        img: 'img_cursos/html_css/t1.png',
         img_alternative:['img_cursos/html_css/0.jpg','img_cursos/html_css/1.jpg','img_cursos/html_css/2.jpg'],
-        description: 'Lógica com portugol',
-        link: 'www.google.com',
+        description: 'Reproduzindo a página da foto usando medidas <b>absolutas.</b>',
+        link: 'https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%201/index.html',
+        alt: 'HTML & CSS'
+      },
+      {
+        img: 'img_cursos/html_css/t1.png',
+        img_alternative:['img_cursos/html_css/0.jpg','img_cursos/html_css/1.jpg','img_cursos/html_css/2.jpg'],
+        description: 'Reproduzindo a página da foto usando medidas <b>relativas.</b>',
+        link: 'https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%202/index.html',
+        alt: 'HTML & CSS'
+      },
+      {
+        img: 'img_cursos/html_css/t3.png',
+        img_alternative:['img_cursos/html_css/0.jpg','img_cursos/html_css/1.jpg','img_cursos/html_css/2.jpg'],
+        description: 'Desenvolvendo layout com medidas relativas e imagem na borda.',
+        link: 'https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%203/index.html',
+        alt: 'HTML & CSS'
+      },
+      {
+        img: 'img_cursos/html_css/t4.png',
+        img_alternative:['img_cursos/html_css/0.jpg','img_cursos/html_css/1.jpg','img_cursos/html_css/2.jpg'],
+        description: 'Prática da propriedade float.',
+        link: 'https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%204/index.html',
+        alt: 'HTML & CSS'
+      },
+      {
+        img: 'img_cursos/html_css/t5.png',
+        img_alternative:['img_cursos/html_css/0.jpg','img_cursos/html_css/1.jpg','img_cursos/html_css/2.jpg'],
+        description: 'Desenvolvendo layout com propriedades estudadas até então.',
+        link: 'https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%205/index.html',
         alt: 'HTML & CSS'
       },
     ]
@@ -54,7 +82,7 @@ const components = {
       {
         img: 'img_cursos/empy/0.jpg',
         description: 'Em breve (...)',
-        link: 'www.google.com',
+        link: '#',
         alt: 'Em breve (...)'
       }
     ]
@@ -93,15 +121,17 @@ function initSpots(curso) {
   curso.spots.forEach((spot)=>{
     const imgSpot = spot.img ? spot.img : spot.img_alternative[Math.floor(Math.random() * spot.img_alternative.length)]
     const card = `
-    <div class="spots">
-          <div class="spots-container-image">
-            <img src="${imgSpot}" alt="${spot.alt}" class="spots-image">
+    <a class="spots-link" href="${spot.link}" target="__blank">
+      <div class="spots">
+            <div class="spots-container-image">
+              <img src="${imgSpot}" alt="${spot.alt}" class="spots-image">
+            </div>
+            <h2>Tarefa ${nTarefa}</h2>
+            <p>
+              ${spot.description}
+            </p>
           </div>
-          <h2>Tarefa ${nTarefa}</h2>
-          <p>
-            ${spot.description}
-          </p>
-        </div>
+    </a>
     `
     containerSpotsSection.insertAdjacentHTML('beforeend', card)
     nTarefa += 1
