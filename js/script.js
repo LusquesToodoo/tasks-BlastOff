@@ -95,7 +95,7 @@ components.cursos.forEach((curso) => {
 
 //------------------------------
 
-function sectionCursos(element){
+function sectionCurso(element){
   console.log('click')
 }
 
