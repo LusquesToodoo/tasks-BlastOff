@@ -5,10 +5,11 @@ const components = {
     active: false,
     spots: [
       {
-        img: 'image/logo.png',
+        img: false,
+        img_alternative:['img_cursos/logica/0.jpg','img_cursos/logica/1.jpg','img_cursos/logica/2.jpg'],
         description: 'Lógica com portugol',
         link: 'www.google.com',
-        alt: 'texto'
+        alt: 'Lógica'
       }
     ]
   },
@@ -17,10 +18,11 @@ const components = {
     active: true,
     spots: [
       {
-        img: 'image/exemplo.jpg',
+        img: false,
+        img_alternative:['img_cursos/html_css/0.jpg','img_cursos/html_css/1.jpg','img_cursos/html_css/2.jpg'],
         description: 'Lógica com portugol',
         link: 'www.google.com',
-        alt: 'texto'
+        alt: 'HTML & CSS'
       },
     ]
   },
@@ -29,10 +31,10 @@ const components = {
     active: false,
     spots: [
       {
-        img: 'image/exemplo.jpg',
-        description: 'Lógica com portugol',
+        img: 'img_cursos/empy/0.jpg',
+        description: 'Em breve (...)',
         link: 'www.google.com',
-        alt: 'texto'
+        alt: 'Em breve (...)'
       }
     ]
   }
@@ -68,10 +70,11 @@ function initSpots(curso) {
   const containerSpotsSection = document.querySelector(`.container-spots[connection^='${i}']`)
   
   curso.spots.forEach((spot)=>{
+    const imgSpot = spot.img ? spot.img : spot.img_alternative[Math.floor(Math.random() * spot.img_alternative.length)]
     const card = `
     <div class="spots">
           <div class="spots-container-image">
-            <img src="${spot.img}" alt="${spot.alt}" class="spots-image">
+            <img src="${imgSpot}" alt="${spot.alt}" class="spots-image">
           </div>
           <h2>Tarefa ${nTarefa}</h2>
           <p>
@@ -82,7 +85,6 @@ function initSpots(curso) {
     containerSpotsSection.insertAdjacentHTML('beforeend', card)
     nTarefa += 1
   })
-  
 }
 
 components.cursos.forEach((curso) => {
@@ -90,3 +92,35 @@ components.cursos.forEach((curso) => {
   initSectionSpot(curso)
   i += 1
 });
+
+//------------------------------
+
+function sectionCurso(element){
+  if(element.explicitOriginalTarget.className == 'nav-item active'){
+    return
+  }
+  const currentSection = document.querySelector(`.container-spots[connection="${this.getAttribute('connection')}"]`)
+  const currentNavItem = document.querySelector(`.nav-item[connection="${this.getAttribute('connection')}"]`)
+  const currentNavItemMobile = document.querySelector(`.nav-mobile-item[connection="${this.getAttribute('connection')}"]`)
+  document.querySelector('.nav-item.active').classList.remove('active')
+  document.querySelector('.nav-mobile-item.active').classList.remove('active')
+  document.querySelector('.container-spots.active').classList.remove('active')
+  currentSection.classList.add('active')
+  currentNavItem.classList.add('active')
+  currentNavItemMobile.classList.add('active')
+}
+
+const navItem = document.querySelectorAll('.nav-item')
+const navItemMobile = document.querySelectorAll('.nav-mobile-item')
+const buttonMenuMobile = document.querySelector('.menu-mobile:not(off)')
+
+navItem.forEach((element)=>{
+  element.addEventListener('click', sectionCurso)
+})
+navItemMobile.forEach((element)=>{
+  element.addEventListener('click', sectionCurso)
+})
+buttonMenuMobile.addEventListener('click', ()=>{
+  const menuMobile = document.querySelector('.nav-mobile')
+  menuMobile.classList.toggle('active')
+})
