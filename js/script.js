@@ -96,9 +96,9 @@ components.cursos.forEach((curso) => {
 //------------------------------
 
 function sectionCurso(element){
-  if(element.explicitOriginalTarget.className == 'nav-item active'){
-    return
-  }
+  // if(element.explicitOriginalTarget.className == 'nav-item active'){
+  //   return
+  // }
   const currentSection = document.querySelector(`.container-spots[connection="${this.getAttribute('connection')}"]`)
   const currentNavItem = document.querySelector(`.nav-item[connection="${this.getAttribute('connection')}"]`)
   const currentNavItemMobile = document.querySelector(`.nav-mobile-item[connection="${this.getAttribute('connection')}"]`)
