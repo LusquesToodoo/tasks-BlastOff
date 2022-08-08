@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;500;600;700;800&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,700&display=swap");
+#all-content .main, #all-content .mobile-header .contentContainer, #all-content .desktop-header .header-bottom .nav-container, #all-content .desktop-header .header-top > .contentContainer {
+  height: inherit;
+  margin: auto;
+  width: calc(100% - 160px);
+  max-width: 1400px;
+}
+@media screen and (max-width: 768px) {
+  #all-content .main, #all-content .mobile-header .contentContainer, #all-content .desktop-header .header-bottom .nav-container, #all-content .desktop-header .header-top > .contentContainer {
+    width: calc(100% - 40px);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: "source sans 3", Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  transition: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+#all-content {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+#all-content .nav-mobile {
+  padding-top: 65px;
+  height: 100vh;
+  width: 200px;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 0.6s;
+  background: #0C1073;
+  overflow-y: scroll;
+  z-index: 1;
+}
+#all-content .nav-mobile.active {
+  left: 0;
+}
+@media screen and (max-width: 768px) {
+  #all-content .nav-mobile {
+    display: block;
+  }
+}
+#all-content .nav-mobile .nav-mobile-title {
+  margin: 10px auto 15px;
+  width: fit-content;
+  font-size: 21px;
+  color: #fff;
+}
+#all-content .nav-mobile ul {
+  padding: 0 20px;
+  width: fit-content;
+  list-style-type: circle;
+}
+#all-content .nav-mobile-item {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+}
+#all-content .nav-mobile-item.active::before {
+  content: url(../image/favicon.svg);
+}
+#all-content .nav-mobile-item::before {
+  content: url(../image/list.svg);
+  display: inline-flex;
+  padding-right: 10px;
+  height: 15px;
+  width: 20px;
+}
+#all-content .nav-mobile-item::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  transition: 0.6s;
+  background-color: #EA005A;
+}
+#all-content .nav-mobile-item:hover::after {
+  width: 50px;
+}
+#all-content .desktop-header {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: cover;
+  background-position-x: center;
+  background-image: url(../image/capa.jpg);
+}
+#all-content .desktop-header .header-top {
+  height: 90px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6666666667);
+}
+#all-content .desktop-header .header-top > .contentContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#all-content .desktop-header .header-top-item.toodoo-logo {
+  width: 180px;
+}
+#all-content .desktop-header .header-top-item.blastoff-logo {
+  padding: 35px;
+  height: inherit;
+  width: 240px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.7333333333);
+}
+#all-content .desktop-header .header-top-item.author-name {
+  height: 43px;
+  width: 180px;
+  font-size: 30px;
+  font-family: "source sans 3";
+  position: relative;
+}
+#all-content .desktop-header .header-top-item.author-name a {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+}
+#all-content .desktop-header .header-bottom {
+  height: 60px;
+  position: relative;
+}
+#all-content .desktop-header .header-bottom::after {
+  content: "";
+  display: block;
+  height: 15px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #EA005A;
+}
+#all-content .desktop-header .header-bottom .nav-container {
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  z-index: 1;
+  transition: 0.3s;
+}
+#all-content .desktop-header .header-bottom .nav-container .nav-item {
+  border: solid 1px #000;
+  border-radius: 5px 5px 0 0;
+  height: 50px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  cursor: pointer;
+}
+#all-content .desktop-header .header-bottom .nav-container .nav-item > p {
+  font-size: 21px;
+  font-weight: 800;
+  font-family: "Rokkitt";
+}
+#all-content .desktop-header .header-bottom .nav-container .nav-item.active {
+  height: 60px;
+  border-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  #all-content .desktop-header {
+    display: none;
+  }
+}
+#all-content .mobile-header {
+  border-bottom: solid 2px #000;
+  height: 65px;
+  width: 100%;
+  display: none;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+@media screen and (max-width: 768px) {
+  #all-content .mobile-header {
+    display: block;
+  }
+}
+#all-content .mobile-header .contentContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+#all-content .mobile-header .contentContainer .mobile-header-image {
+  margin: auto 0;
+  min-width: 120px;
+  width: calc(100% - 175px);
+  max-width: 175px;
+}
+#all-content .mobile-header .contentContainer .menu-mobile {
+  width: 50px;
+}
+#all-content .mobile-header .contentContainer .menu-mobile:not(.off) {
+  cursor: pointer;
+}
+#all-content .mobile-header .contentContainer .menu-mobile.off {
+  height: 30px;
+  opacity: 0;
+}
+#all-content .main {
+  position: relative;
+}
+#all-content .main .mobile-title {
+  margin: 15px auto 20px;
+  width: fit-content;
+  font-size: 21px;
+  font-family: "Rokkitt";
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #all-content .main .mobile-title {
+    padding-top: 65px;
+    display: block;
+  }
+}
+#all-content .main .container-spots {
+  margin: 45px auto 75px;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#all-content .main .container-spots.active {
+  display: flex;
+  animation: appear 0.5s linear 1;
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateX(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+#all-content .main .container-spots .spots {
+  padding: 7px;
+  border: solid 1px #000;
+  border-radius: 5px;
+  height: 300px;
+  width: 250px;
+}
+#all-content .main .container-spots .spots-container-image {
+  height: 185px;
+  width: 100%;
+}
+#all-content .main .container-spots .spots-image {
+  border-radius: 5px;
+  height: 185px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+#all-content .main .container-spots .spots > h2 {
+  margin: 5px 0;
+  font-size: 21px;
+  font-family: "Rokkitt";
+}
+#all-content .main .container-spots .spots > p {
+  font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+  #all-content .main .container-spots {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  #all-content .main {
+    min-height: calc(100vh - 100px);
+  }
+}
+#all-content .footer {
+  margin-top: 30px;
+  border-top: solid 1px #fff;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #0C1073;
+  z-index: 100;
+}
+#all-content .footer > p {
+  font-size: 36px;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */

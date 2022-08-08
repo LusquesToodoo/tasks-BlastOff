@@ -1,0 +1,26 @@
+{
+  "name": "tasks-blastoff",
+  "version": "1.0.0",
+  "description": "Tarefas do BlastOff",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "sass --watch sass:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LusquesToodoo/tasks-BlastOff.git"
+  },
+  "keywords": [
+    "BlastOff"
+  ],
+  "author": "https://github.com/Lusques",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LusquesToodoo/tasks-BlastOff/issues"
+  },
+  "homepage": "https://github.com/LusquesToodoo/tasks-BlastOff#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
