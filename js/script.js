@@ -7,10 +7,31 @@ const components = {
       {
         img: false,
         img_alternative:['img_cursos/logica/0.jpg','img_cursos/logica/1.jpg','img_cursos/logica/2.jpg'],
-        description: 'Lógica com portugol',
-        link: 'www.google.com',
-        alt: 'Lógica'
-      }
+        description: 'Calcula salário total de funcionário com um bônus de vendas.',
+        link: 'https://github.com/LusquesToodoo/LucasSilva-BlastOff/blob/main/Curso%20-%20LOO/tarefas/tarefa%201.ALG',
+        alt: 'Lógica de programação'
+      },
+      {
+        img: false,
+        img_alternative:['img_cursos/logica/0.jpg','img_cursos/logica/1.jpg','img_cursos/logica/2.jpg'],
+        description: 'Informa média de Km/L de acordo com dados entregues pelo usuário.',
+        link: 'https://github.com/LusquesToodoo/LucasSilva-BlastOff/blob/main/Curso%20-%20LOO/tarefas/tarefa%202.ALG',
+        alt: 'Lógica de programação'
+      },
+      {
+        img: false,
+        img_alternative:['img_cursos/logica/0.jpg','img_cursos/logica/1.jpg','img_cursos/logica/2.jpg'],
+        description: 'Avalia se financiamento será concedido ou negado.',
+        link: 'https://github.com/LusquesToodoo/LucasSilva-BlastOff/blob/main/Curso%20-%20LOO/tarefas/tarefa%203.ALG',
+        alt: 'Lógica de programação'
+      },
+      {
+        img: false,
+        img_alternative:['img_cursos/logica/0.jpg','img_cursos/logica/1.jpg','img_cursos/logica/2.jpg'],
+        description: 'Avalia se conta do banco do cliente tem saldo para descontar valor de cheque.',
+        link: 'https://github.com/LusquesToodoo/LucasSilva-BlastOff/blob/main/Curso%20-%20LOO/tarefas/tarefa%204.ALG',
+        alt: 'Lógica de programação'
+      },
     ]
   },
   {
