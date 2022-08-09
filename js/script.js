@@ -87,6 +87,13 @@ const components = {
         link: 'https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%207/index.html',
         alt: 'HTML & CSS'
       },
+      {
+        img: 'img_cursos/html_css/t8.png',
+        img_alternative:['img_cursos/html_css/0.jpg','img_cursos/html_css/1.jpg','img_cursos/html_css/2.jpg'],
+        description: 'Desenvolvendo tablea com o layout da foto.',
+        link: 'https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%208/index.html',
+        alt: 'HTML & CSS'
+      },
     ]
   },
   {
@@ -129,7 +136,7 @@ function initSectionSpot(curso){
 } 
 
 function initSpots(curso) {
-  let nTarefa = 1
+  let nTask = 1
   const containerSpotsSection = document.querySelector(`.container-spots[connection^='${i}']`)
   
   curso.spots.forEach((spot)=>{
@@ -140,7 +147,7 @@ function initSpots(curso) {
             <div class="spots-container-image">
               <img src="${imgSpot}" alt="${spot.alt}" class="spots-image">
             </div>
-            <h2>Tarefa ${nTarefa}</h2>
+            <h2>Tarefa ${nTask}</h2>
             <p>
               ${spot.description}
             </p>
@@ -148,7 +155,7 @@ function initSpots(curso) {
     </a>
     `
     containerSpotsSection.insertAdjacentHTML('beforeend', card)
-    nTarefa += 1
+    nTask += 1
   })
 }
 
