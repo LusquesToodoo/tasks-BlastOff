@@ -101,6 +101,13 @@ const components = {
         link: 'https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%209/index.html',
         alt: 'HTML & CSS'
       },
+      {
+        img: 'img_cursos/html_css/t10.png',
+        img_alternative:['img_cursos/html_css/0.jpg','img_cursos/html_css/1.jpg','img_cursos/html_css/2.jpg'],
+        description: 'Desenvolvendo tabela customizada.',
+        link: 'https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%2010/index.html',
+        alt: 'HTML & CSS'
+      },
     ]
   },
   {
