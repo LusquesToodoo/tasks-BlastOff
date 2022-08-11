@@ -115,6 +115,13 @@ const components = {
         link: 'https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%2011/index.html',
         alt: 'HTML & CSS'
       },
+      {
+        img: 'img_cursos/html_css/t12.png',
+        img_alternative:['img_cursos/html_css/0.jpg','img_cursos/html_css/1.jpg','img_cursos/html_css/2.jpg'],
+        description: 'Criando layout com lista ordenada.',
+        link: 'https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%2012/index.html',
+        alt: 'HTML & CSS'
+      },
     ]
   },
   {
