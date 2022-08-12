@@ -118,8 +118,15 @@ const components = {
       {
         img: 'img_cursos/html_css/t12.png',
         img_alternative:['img_cursos/html_css/0.jpg','img_cursos/html_css/1.jpg','img_cursos/html_css/2.jpg'],
-        description: 'Criando layout com lista ordenada.',
+        description: 'Prática com listas ordenadas.',
         link: 'https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%2012/index.html',
+        alt: 'HTML & CSS'
+      },
+      {
+        img: 'img_cursos/html_css/t13.png',
+        img_alternative:['img_cursos/html_css/0.jpg','img_cursos/html_css/1.jpg','img_cursos/html_css/2.jpg'],
+        description: 'Reproduzindo lista ordenada presente na foto.',
+        link: 'https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%2013/index.html',
         alt: 'HTML & CSS'
       },
     ]
