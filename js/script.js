@@ -133,7 +133,7 @@ const components = {
         img: 'img_cursos/html_css/t14.png',
         img_alternative:['img_cursos/html_css/0.jpg','img_cursos/html_css/1.jpg','img_cursos/html_css/2.jpg'],
         description: 'Prática de flexbox e lista.',
-        link: 'https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%2013/index.html',
+        link: 'https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%2014/index.html',
         alt: 'HTML & CSS',
       },
     ]
