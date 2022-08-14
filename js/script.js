@@ -136,6 +136,13 @@ const components = {
         link: 'https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%2014/index.html',
         alt: 'HTML & CSS',
       },
+      {
+        img: 'img_cursos/html_css/t15.png',
+        img_alternative:['img_cursos/html_css/0.jpg','img_cursos/html_css/1.jpg','img_cursos/html_css/2.jpg'],
+        description: 'Desenvolvendo layout do Yahoo! de 2008 com display grid.',
+        link: 'https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%2015/index.html',
+        alt: 'HTML & CSS',
+      },
     ]
   },
   {
