@@ -143,6 +143,13 @@ const components = {
         link: 'https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%2015/index.html',
         alt: 'HTML & CSS',
       },
+      {
+        img: 'img_cursos/html_css/t16.png',
+        img_alternative:['img_cursos/html_css/0.jpg','img_cursos/html_css/1.jpg','img_cursos/html_css/2.jpg'],
+        description: 'Desenvolvendo layout do MercadoLivre! de 2015.',
+        link: 'https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%2016/index.html',
+        alt: 'HTML & CSS',
+      },
     ]
   },
   {
