@@ -158,56 +158,56 @@ const components = {
     spots: [
       {
         img: false,
-        img_alternative:['/img_cursos/js/empy1.png','/img_cursos/js/empy2.png', '/img_cursos/js/empy3.png'],
+        img_alternative:['img_cursos/js/empy1.png','img_cursos/js/empy2.png', 'img_cursos/js/empy3.png'],
         description: 'Tarefa 17 - Desenvolvendo lógica com js. Analisando duas strings.',
         link: 'https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web%20-%20javaScript/tarefas/tarefa_1/index.html',
         alt: 'JavaScript'
       },
       {
         img: false,
-        img_alternative:['/img_cursos/js/empy1.png','/img_cursos/js/empy2.png', '/img_cursos/js/empy3.png'],
+        img_alternative:['img_cursos/js/empy1.png','img_cursos/js/empy2.png', 'img_cursos/js/empy3.png'],
         description: 'Tarefa 18 - Calcula MMC de acordo com gênero do usuário.',
         link: 'https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web%20-%20javaScript/tarefas/tarefa%202/index.html',
         alt: 'JavaScript'
       },
       {
         img: false,
-        img_alternative:['/img_cursos/js/empy1.png','/img_cursos/js/empy2.png', '/img_cursos/js/empy3.png'],
+        img_alternative:['img_cursos/js/empy1.png','img_cursos/js/empy2.png', 'img_cursos/js/empy3.png'],
         description: 'Tarefa 19 - Adicionando atributo dinamicamente a objeto. Resultado no console.',
         link: 'https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web%20-%20javaScript/tarefas/tarefa%203/index.html',
         alt: 'JavaScript'
       },
       {
         img: false,
-        img_alternative:['/img_cursos/js/empy1.png','/img_cursos/js/empy2.png', '/img_cursos/js/empy3.png'],
+        img_alternative:['img_cursos/js/empy1.png','img_cursos/js/empy2.png', 'img_cursos/js/empy3.png'],
         description: 'Tarefa 20 - Calcula multa da pescaria de João de acordo com excesso.',
         link: 'https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web%20-%20javaScript/tarefas/tarefa%204/index.html',
         alt: 'JavaScript'
       },
       {
         img: false,
-        img_alternative:['/img_cursos/js/empy1.png','/img_cursos/js/empy2.png', '/img_cursos/js/empy3.png'],
+        img_alternative:['img_cursos/js/empy1.png','img_cursos/js/empy2.png', 'img_cursos/js/empy3.png'],
         description: 'Tarefa 21 - Calcula multa da pescaria de João de acordo com excesso.',
         link: 'https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web%20-%20javaScript/tarefas/tarefa%205/index.html',
         alt: 'JavaScript'
       },
       {
         img: false,
-        img_alternative:['/img_cursos/js/empy1.png','/img_cursos/js/empy2.png', '/img_cursos/js/empy3.png'],
+        img_alternative:['img_cursos/js/empy1.png','img_cursos/js/empy2.png', 'img_cursos/js/empy3.png'],
         description: 'Tarefa 22 - Informa nota parcial do usuário, e se a nota é suficinete para passar de semestre.',
         link: 'https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web%20-%20javaScript/tarefas/tarefa%206/index.html',
         alt: 'JavaScript'
       },
       {
         img: false,
-        img_alternative:['/img_cursos/js/empy1.png','/img_cursos/js/empy2.png', '/img_cursos/js/empy3.png'],
+        img_alternative:['img_cursos/js/empy1.png','img_cursos/js/empy2.png', 'img_cursos/js/empy3.png'],
         description: 'Tarefa 23 - Calcula e informa média de idade de um grupo de pessoas.',
         link: 'https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web%20-%20javaScript/tarefas/tarefa%207/index.html',
         alt: 'JavaScript'
       },
       {
         img: false,
-        img_alternative:['/img_cursos/js/empy1.png','/img_cursos/js/empy2.png', '/img_cursos/js/empy3.png'],
+        img_alternative:['img_cursos/js/empy1.png','img_cursos/js/empy2.png', 'img_cursos/js/empy3.png'],
         description: 'Tarefa 24 - Cadastra clientes de academia, separa por determinadas características e informa os dados.',
         link: 'https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web%20-%20javaScript/tarefas/tarefa%208/index.html',
         alt: 'JavaScript'
