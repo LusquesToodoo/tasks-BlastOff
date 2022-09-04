@@ -221,8 +221,8 @@ img {
 }
 
 .main {
-  padding-bottom: 15px;
-  padding-top: 15px;
+  padding-bottom: 75px;
+  padding-top: 40px;
   min-height: 25vh;
 }
 @media screen and (max-width: 780px) {
@@ -231,13 +231,16 @@ img {
     padding-top: 100px;
   }
 }
-.main .course-list {
+.main .all-courses {
+  display: none;
+}
+.main .all-courses .course-list {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
   width: 100%;
 }
-.main .course-list .course-list-item {
+.main .all-courses .course-list .course-list-item {
   border-radius: 5px;
   box-shadow: 4px 2px 40px rgba(170, 170, 170, 0.6666666667);
   column-gap: 15px;
@@ -247,14 +250,14 @@ img {
   max-width: 260px;
   overflow: hidden;
 }
-.main .course-list .course-list-item:hover .course-image .course-links {
+.main .all-courses .course-list .course-list-item:hover .course-image .course-links {
   width: 100%;
 }
-.main .course-list .course-list-item .course-image {
+.main .all-courses .course-list .course-list-item .course-image {
   position: relative;
   width: 100%;
 }
-.main .course-list .course-list-item .course-image .course-links {
+.main .all-courses .course-list .course-list-item .course-image .course-links {
   background-color: #ea005a;
   color: #fff;
   font-family: "Chakra Petch", sans-serif;
@@ -265,20 +268,20 @@ img {
   transition: 0.6s;
   width: 10px;
 }
-.main .course-list .course-list-item .course-image .course-links.active {
+.main .all-courses .course-list .course-list-item .course-image .course-links.active {
   width: 100%;
 }
-.main .course-list .course-list-item .course-image .course-links .course-links-title {
+.main .all-courses .course-list .course-list-item .course-image .course-links .course-links-title {
   margin: 15px;
 }
-.main .course-list .course-list-item .course-image .course-links .course-links-list {
+.main .all-courses .course-list .course-list-item .course-image .course-links .course-links-list {
   margin: auto;
   width: fit-content;
 }
-.main .course-list .course-list-item .course-image .course-links .course-links-list .course-links-list-item {
+.main .all-courses .course-list .course-list-item .course-image .course-links .course-links-list .course-links-list-item {
   font-size: 21px;
 }
-.main .course-list .course-list-item .course-image .course-links .course-links-list .course-links-list-item a {
+.main .all-courses .course-list .course-list-item .course-image .course-links .course-links-list .course-links-list-item a {
   border-radius: 10px;
   color: #fff;
   display: inline-block;
@@ -287,24 +290,123 @@ img {
   transition: 0.3s;
   white-space: nowrap;
 }
-.main .course-list .course-list-item .course-image .course-links .course-links-list .course-links-list-item a:hover {
+.main .all-courses .course-list .course-list-item .course-image .course-links .course-links-list .course-links-list-item a:hover {
   background-color: #0c1073;
 }
-.main .course-list .course-list-item .course-info {
+.main .all-courses .course-list .course-list-item .course-info {
   height: 190px;
   height: fit-content;
   padding: 15px 10px 30px;
 }
-.main .course-list .course-list-item .course-info .course-title {
+.main .all-courses .course-list .course-list-item .course-info .course-title {
   font-family: "Chakra Petch", sans-serif;
   font-size: 28px;
   margin: auto;
   width: fit-content;
 }
-.main .course-list .course-list-item .course-info .course-description {
+.main .all-courses .course-list .course-list-item .course-info .course-description {
   height: 6rem;
   margin-top: 10px;
   overflow: hidden;
+}
+.main .new-courses .table-courses {
+  width: 100%;
+  display: block;
+}
+.main .new-courses .table-courses tbody,
+.main .new-courses .table-courses tr,
+.main .new-courses .table-courses th,
+.main .new-courses .table-courses td {
+  width: 100%;
+  display: block;
+}
+.main .new-courses .table-courses tr {
+  display: flex;
+}
+.main .new-courses .table-courses tr p {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 21px;
+  height: inherit;
+  margin: auto;
+  padding: 10px 20px;
+  width: fit-content;
+}
+.main .new-courses .table-courses th,
+.main .new-courses .table-courses td {
+  border: solid 1px #000;
+}
+.main .new-courses .table-courses .tr-course-title .th-course-title {
+  align-items: center;
+  background-color: #fb798d;
+  border: solid 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main .new-courses .table-courses .tr-course-title .th-course-title p {
+  background-color: #fff;
+  border-left: solid 1px #000;
+  border-right: solid 1px #000;
+}
+.main .new-courses .table-courses .tr-course {
+  width: 100%;
+}
+.main .new-courses .table-courses .tr-course:nth-child(2n+1) .td-course.tag {
+  background-color: #fb798d;
+}
+.main .new-courses .table-courses .tr-course .td-course {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.main .new-courses .table-courses .tr-course .td-course.tag {
+  background-color: #f93150;
+  color: #fff;
+  max-width: 430px;
+}
+.main .new-courses .table-courses .tr-course .td-course label {
+  border-radius: 50%;
+  border: solid 1px;
+  cursor: pointer;
+  height: 30px;
+  position: relative;
+  width: 30px;
+}
+.main .new-courses .table-courses .tr-course .td-course label input[type=radio] {
+  display: none;
+  height: 30px;
+  margin: auto;
+  position: relative;
+  width: 30px;
+}
+.main .new-courses .table-courses .tr-course .td-course label input[type=radio]:checked + span {
+  display: block;
+}
+.main .new-courses .table-courses .tr-course .td-course label .status-active {
+  animation: spin 3s linear infinite;
+  background-image: url(../image/status-checked.svg);
+  background-size: contain;
+  display: none;
+  height: 25px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+}
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.main .new-courses .table-courses .tr-course .td-course input {
+  font-size: 21px;
+  height: 100%;
+  text-align: center;
+  width: 100%;
 }
 
 .footer {
