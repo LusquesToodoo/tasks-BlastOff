@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-.header .header-mobile .header-mobile-top-container .header-mobile-top, .header .header-desktop .header-bottom-container .header-bottom, .header .header-desktop .header-top-container .header-top {
+.main, .header .header-mobile .header-mobile-top-container .header-mobile-top, .header .header-desktop .header-bottom-container .header-bottom, .header .header-desktop .header-top-container .header-top {
   margin: auto;
   max-width: 1320px;
   padding: 0 40px;
@@ -8,6 +8,10 @@
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  background-color: #F7F7F7;
 }
 
 img {
@@ -148,7 +152,7 @@ img {
 }
 .header .header-mobile .header-mobile-aside {
   background-color: #0c1073;
-  height: 100vh;
+  height: calc(100vh - 185px);
   left: -100%;
   max-width: 275px;
   min-width: 175px;
@@ -210,6 +214,56 @@ img {
 }
 .header .header-mobile .header-mobile-aside .nav-list .nav-list-item.active:hover::before {
   opacity: 0.3;
+}
+
+.main {
+  padding: 15px 0;
+  min-height: 25vh;
+}
+.main .course-list {
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 100%;
+}
+.main .course-list .course-list-item {
+  box-shadow: 4px 2px 40px rgba(170, 170, 170, 0.6666666667);
+  column-gap: 15px;
+  display: flex;
+  max-width: 600px;
+  width: 100%;
+  width: calc(100% - 20px);
+}
+.main .course-list .course-list-item .course-image {
+  width: 150px;
+}
+.main .course-list .course-list-item .course-info {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+  row-gap: 10px;
+}
+.main .course-list .course-list-item .course-info .course-title {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 28px;
+}
+.main .course-list .course-list-item .course-info .course-description {
+  max-width: 470px;
+}
+
+.footer {
+  align-items: center;
+  background-color: #0c1073;
+  border-top: solid 1px #fff;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.footer p {
+  color: #fff;
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
