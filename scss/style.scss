@@ -23,7 +23,6 @@ img {
 }
 
 .all-container {
-  background-color: red;
   min-height: 100vh;
 }
 
@@ -61,7 +60,6 @@ img {
       }
     }
   }
-
   & .header-bottom-container {
     background-color: #000d;
     & .header-bottom {
@@ -101,6 +99,11 @@ img {
           }
         }
       }
+    }
+    & .header-line{
+      background-color: $bg-pink;
+      height: 15px;
+      width: 100%;
     }
   }
 }

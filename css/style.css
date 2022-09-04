@@ -15,7 +15,6 @@ img {
 }
 
 .all-container {
-  background-color: red;
   min-height: 100vh;
 }
 
@@ -90,6 +89,11 @@ img {
   background-color: #0c1073;
   border-radius: 0 5px 5px 0;
   width: 50%;
+}
+.header .header-bottom-container .header-line {
+  background-color: #ea005a;
+  height: 15px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
