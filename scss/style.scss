@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+$bg-blue: #0c1073;
+$bg-pink: #ea005a;
+$font-text: "Lato", sans-serif;
+$font-title: "Chakra Petch", sans-serif;
+$text-color-dark: #000;
+$text-color-light: #fff;
+
+%page-container {
+  margin: auto;
+  max-width: 1320px;
+  padding: 0 40px;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+.all-container {
+  background-color: red;
+  min-height: 100vh;
+}
+
+.header {
+  background-image: url(../image/capa.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  justify-content: space-between;
+  & .header-top-container {
+    background-color: #000d;
+    & .header-top {
+      @extend %page-container;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      & .logo-toodoo {
+        width: 180px;
+      }
+      & .logo-blastoff {
+        background-color: #fff;
+        height: inherit;
+        padding: 20px 40px;
+        width: 250px;
+      }
+      & .author {
+        color: $text-color-light;
+        font-family: $font-title;
+        font-size: 30px;
+        text-align: right;
+        text-decoration: none;
+        width: 180px;
+      }
+    }
+  }
+
+  & .header-bottom-container {
+    background-color: #000d;
+    & .header-bottom {
+      @extend %page-container;
+      align-items: center;
+      display: flex;
+      height: 75px;
+      & .nav-list {
+        align-content: center;
+        display: flex;
+        gap: 35px;
+        & .nav-list-item {
+          color: $text-color-light;
+          cursor: pointer;
+          font-family: $font-title;
+          font-size: 30px;
+          position: relative;
+          z-index: 3;
+          &::before {
+            background-color: white;
+            content: "";
+            display: block;
+            height: 110%;
+            left: -10px;
+            position: absolute;
+            top: -5%;
+            transition: .6s;
+            width: 3px;
+            z-index: -1;
+          }
+          &:hover{
+            &::before{
+              background-color: $bg-blue;
+              border-radius: 0 5px 5px 0;
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
