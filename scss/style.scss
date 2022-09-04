@@ -23,6 +23,7 @@ $text-color-light: #fff;
 * {
   box-sizing: border-box;
 }
+
 body {
   background-color: #f7f7f7;
 }
@@ -326,8 +327,7 @@ img {
         & .course-description {
           height: 6rem;
           margin-top: 10px;
-          // overflow-y: scroll;
-          overflow: hidden; // LIMAO. remover caso descomente o overflow-y acima.
+          overflow: hidden;
         }
       }
     }
