@@ -14,6 +14,12 @@ $text-color-light: #fff;
   width: 100%;
 }
 
+@mixin media($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -24,59 +30,175 @@ img {
 
 .all-container {
   min-height: 100vh;
+  font-family: $font-text;
 }
 
 .header {
-  background-image: url(../image/capa.jpg);
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  height: 75vh;
-  justify-content: space-between;
-  & .header-top-container {
-    background-color: #000d;
-    & .header-top {
-      @extend %page-container;
-      align-items: center;
-      display: flex;
-      justify-content: space-between;
-      & .logo-toodoo {
-        width: 180px;
+  @include media(780px) {
+    position: sticky;
+    top: 0;
+  }
+  .header-desktop {
+    background-image: url(../image/capa.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    justify-content: space-between;
+    @include media(780px) {
+      display: none;
+    }
+    & .header-top-container {
+      background-color: #000d;
+      & .header-top {
+        @extend %page-container;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        & .logo-toodoo {
+          width: 180px;
+        }
+        & .logo-blastoff {
+          background-color: #fff;
+          height: inherit;
+          padding: 20px 40px;
+          width: 250px;
+        }
+        & .author {
+          color: $text-color-light;
+          font-family: $font-title;
+          font-size: 30px;
+          text-align: right;
+          text-decoration: none;
+          width: 180px;
+        }
       }
-      & .logo-blastoff {
-        background-color: #fff;
-        height: inherit;
-        padding: 20px 40px;
-        width: 250px;
+    }
+    & .header-bottom-container {
+      background-color: #000d;
+      & .header-bottom {
+        @extend %page-container;
+        align-items: center;
+        display: flex;
+        height: 75px;
+        & .nav-list {
+          align-content: center;
+          display: flex;
+          gap: 35px;
+          & .nav-list-item {
+            color: $text-color-light;
+            cursor: pointer;
+            font-family: $font-title;
+            font-size: 30px;
+            position: relative;
+            z-index: 3;
+            &::before {
+              background-color: white;
+              content: "";
+              display: block;
+              height: 110%;
+              left: -10px;
+              position: absolute;
+              top: -5%;
+              transition: 0.6s;
+              width: 3px;
+              z-index: -1;
+            }
+            &:hover {
+              &::before {
+                background-color: $bg-blue;
+                border-radius: 0 5px 5px 0;
+                width: 50%;
+              }
+            }
+            &.active {
+              &::before {
+                background-color: $bg-blue;
+                border-radius: 0 5px 5px 0;
+                width: 50%;
+              }
+              &:hover {
+                &::before {
+                  opacity: .5;
+                }
+              }
+            }
+          }
+        }
       }
-      & .author {
-        color: $text-color-light;
-        font-family: $font-title;
-        font-size: 30px;
-        text-align: right;
-        text-decoration: none;
-        width: 180px;
+      & .header-line {
+        background-color: $bg-pink;
+        height: 15px;
+        width: 100%;
       }
     }
   }
-  & .header-bottom-container {
-    background-color: #000d;
-    & .header-bottom {
-      @extend %page-container;
-      align-items: center;
-      display: flex;
-      height: 75px;
-      & .nav-list {
-        align-content: center;
+  .header-mobile {
+    display: none;
+    @include media(780px) {
+      display: block;
+    }
+    & .header-mobile-top-container {
+      background-color: #fff;
+      border-bottom: solid 3px;
+      padding: 10px 0;
+      & .header-mobile-top {
+        @extend %page-container;
+        align-items: center;
         display: flex;
-        gap: 35px;
+        justify-content: space-between;
+        & .header-mobile-menu {
+          height: 50px;
+          width: 50px;
+          &.none {
+            opacity: 0;
+          }
+          &:not(.none) {
+            cursor: pointer;
+          }
+        }
+        & .header-mobile-blastoff {
+          width: 200px;
+        }
+      }
+    }
+    & .header-mobile-aside {
+      background-color: $bg-blue;
+      height: 100vh;
+      left: -100%;
+      max-width: 275px;
+      min-width: 175px;
+      padding: 15px 20px;
+      position: relative;
+      transition: 0.6s;
+      width: calc(50% - 50px);
+      &.active {
+        left: 0;
+      }
+      & .header-menu-title {
+        color: $text-color-light;
+        font-family: $font-title;
+        font-size: 30px;
+        font-size: clamp(18px, 30px, 30px);
+        margin: auto;
+        margin-bottom: 20px;
+        width: fit-content;
+      }
+      & .nav-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        &.active {
+          left: 0;
+        }
         & .nav-list-item {
           color: $text-color-light;
           cursor: pointer;
-          font-family: $font-title;
-          font-size: 30px;
+          font-size: 21px;
           position: relative;
+          transition: 0.6s;
+          width: fit-content;
           z-index: 3;
           &::before {
             background-color: white;
@@ -86,24 +208,31 @@ img {
             left: -10px;
             position: absolute;
             top: -5%;
-            transition: .6s;
+            transition: 0.6s;
             width: 3px;
             z-index: -1;
           }
-          &:hover{
-            &::before{
-              background-color: $bg-blue;
+          &:hover {
+            &::before {
+              background-color: $bg-pink;
               border-radius: 0 5px 5px 0;
               width: 50%;
             }
           }
+          &.active {
+            &::before {
+              background-color: $bg-pink;
+              border-radius: 0 5px 5px 0;
+              width: 50%;
+            }
+            &:hover {
+              &::before {
+                opacity: 0.3;
+              }
+            }
+          }
         }
       }
-    }
-    & .header-line{
-      background-color: $bg-pink;
-      height: 15px;
-      width: 100%;
     }
   }
 }
