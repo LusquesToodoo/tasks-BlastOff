@@ -11,7 +11,7 @@
 }
 
 body {
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
 }
 
 img {
@@ -23,10 +23,14 @@ img {
   font-family: "Lato", sans-serif;
 }
 
+.header {
+  width: 100%;
+}
 @media screen and (max-width: 780px) {
   .header {
-    position: sticky;
+    position: fixed;
     top: 0;
+    z-index: 10000;
   }
 }
 .header .header-desktop {
@@ -152,7 +156,7 @@ img {
 }
 .header .header-mobile .header-mobile-aside {
   background-color: #0c1073;
-  height: calc(100vh - 185px);
+  height: calc(100vh - 80px);
   left: -100%;
   max-width: 275px;
   min-width: 175px;
@@ -217,37 +221,90 @@ img {
 }
 
 .main {
-  padding: 15px 0;
+  padding-bottom: 15px;
+  padding-top: 15px;
   min-height: 25vh;
 }
+@media screen and (max-width: 780px) {
+  .main {
+    min-height: calc(100vh - 100px);
+    padding-top: 100px;
+  }
+}
 .main .course-list {
+  display: flex;
   flex-wrap: wrap;
   gap: 15px;
   width: 100%;
 }
 .main .course-list .course-list-item {
+  border-radius: 5px;
   box-shadow: 4px 2px 40px rgba(170, 170, 170, 0.6666666667);
   column-gap: 15px;
-  display: flex;
-  max-width: 600px;
-  width: 100%;
-  width: calc(100% - 20px);
-}
-.main .course-list .course-list-item .course-image {
-  width: 150px;
-}
-.main .course-list .course-list-item .course-info {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
-  padding: 15px 0;
-  row-gap: 10px;
+  max-width: 260px;
+  overflow: hidden;
+}
+.main .course-list .course-list-item:hover .course-image .course-links {
+  width: 100%;
+}
+.main .course-list .course-list-item .course-image {
+  position: relative;
+  width: 100%;
+}
+.main .course-list .course-list-item .course-image .course-links {
+  background-color: #ea005a;
+  color: #fff;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 21px;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  transition: 0.6s;
+  width: 10px;
+}
+.main .course-list .course-list-item .course-image .course-links.active {
+  width: 100%;
+}
+.main .course-list .course-list-item .course-image .course-links .course-links-title {
+  margin: 15px;
+}
+.main .course-list .course-list-item .course-image .course-links .course-links-list {
+  margin: auto;
+  width: fit-content;
+}
+.main .course-list .course-list-item .course-image .course-links .course-links-list .course-links-list-item {
+  font-size: 21px;
+}
+.main .course-list .course-list-item .course-image .course-links .course-links-list .course-links-list-item a {
+  border-radius: 10px;
+  color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
+  text-decoration: none;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+.main .course-list .course-list-item .course-image .course-links .course-links-list .course-links-list-item a:hover {
+  background-color: #0c1073;
+}
+.main .course-list .course-list-item .course-info {
+  height: 190px;
+  height: fit-content;
+  padding: 15px 10px 30px;
 }
 .main .course-list .course-list-item .course-info .course-title {
   font-family: "Chakra Petch", sans-serif;
   font-size: 28px;
+  margin: auto;
+  width: fit-content;
 }
 .main .course-list .course-list-item .course-info .course-description {
-  max-width: 470px;
+  height: 6rem;
+  margin-top: 10px;
+  overflow: hidden;
 }
 
 .footer {
@@ -259,7 +316,7 @@ img {
   justify-content: center;
   position: relative;
   width: 100%;
-  z-index: 1;
+  z-index: 10000;
 }
 .footer p {
   color: #fff;
