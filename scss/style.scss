@@ -42,7 +42,6 @@ img {
 }
 
 .header {
-  display: none;
   width: 100%;
   @include media(780px) {
     position: fixed;
@@ -258,7 +257,7 @@ img {
     padding-top: 100px;
   }
   & .all-courses {
-    display: none; //Limao
+    // display: none; //Limao
     & .course-list {
       display: flex;
       flex-wrap: wrap;
@@ -341,9 +340,13 @@ img {
     }
   }
   & .new-courses {
+    display: none;
     & .table-courses {
       width: 100%;
       display: block;
+      &:not(:last-child) {
+        margin-bottom: 75px;
+      }
       & tbody,
       tr,
       th,
@@ -465,9 +468,9 @@ img {
                 background-color: $bg-blue;
               }
               &.tr-spots-button {
-                & .td-spots-button{
+                & .td-spots-button {
                   background-color: $bg-blue-light;
-                  &:active{
+                  &:active {
                     background-color: $bg-blue;
                   }
                 }
@@ -482,8 +485,8 @@ img {
                 background-color: $bg-blue;
                 color: $text-color-light;
                 cursor: pointer;
-                transition: .3s;
-                &:active{
+                transition: 0.3s;
+                &:active {
                   background-color: $bg-blue-light;
                 }
               }

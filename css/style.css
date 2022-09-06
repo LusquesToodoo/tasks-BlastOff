@@ -24,7 +24,6 @@ img {
 }
 
 .header {
-  display: none;
   width: 100%;
 }
 @media screen and (max-width: 780px) {
@@ -232,9 +231,6 @@ img {
     padding-top: 100px;
   }
 }
-.main .all-courses {
-  display: none;
-}
 .main .all-courses .course-list {
   display: flex;
   flex-wrap: wrap;
@@ -310,9 +306,15 @@ img {
   margin-top: 10px;
   overflow: hidden;
 }
+.main .new-courses {
+  display: none;
+}
 .main .new-courses .table-courses {
   width: 100%;
   display: block;
+}
+.main .new-courses .table-courses:not(:last-child) {
+  margin-bottom: 75px;
 }
 .main .new-courses .table-courses tbody,
 .main .new-courses .table-courses tr,
