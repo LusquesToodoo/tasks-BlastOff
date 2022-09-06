@@ -42,6 +42,7 @@ img {
 }
 
 .header {
+  display: none;
   width: 100%;
   @include media(780px) {
     position: fixed;
@@ -429,10 +430,10 @@ img {
               transform: translate(-50%, -50%);
               width: 25px;
               @keyframes spin {
-                0%{
+                0% {
                   transform: translate(-50%, -50%) rotate(0deg);
                 }
-                100%{
+                100% {
                   transform: translate(-50%, -50%) rotate(360deg);
                 }
               }
@@ -443,6 +444,76 @@ img {
             height: 100%;
             text-align: center;
             width: 100%;
+          }
+        }
+      }
+
+      & .td-table-spots {
+        border: 0;
+        & .table-spots {
+          width: 100%;
+          & .tr-spots-title {
+            background-color: $bg-blue;
+            width: 100%;
+            & .th-spots-title {
+              color: $text-color-light;
+            }
+          }
+          & .tr-spots {
+            &:nth-child(2n + 1) {
+              & .td-spots:first-child {
+                background-color: $bg-blue;
+              }
+              &.tr-spots-button {
+                & .td-spots-button{
+                  background-color: $bg-blue-light;
+                  &:active{
+                    background-color: $bg-blue;
+                  }
+                }
+              }
+            }
+            &.tr-spots-button {
+              border: 0;
+              td:not(.td-spots-button) {
+                opacity: 0;
+              }
+              & .td-spots-button {
+                background-color: $bg-blue;
+                color: $text-color-light;
+                cursor: pointer;
+                transition: .3s;
+                &:active{
+                  background-color: $bg-blue-light;
+                }
+              }
+            }
+            & .td-spots {
+              width: 100%;
+              &.tag {
+                background-color: $bg-blue-light;
+                color: $text-color-light;
+              }
+              &.input-image {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                & .input-spot-image {
+                  display: none;
+                  &:checked + .label-spot-image {
+                    background-color: $bg-blue;
+                  }
+                }
+                & .label-spot-image {
+                  border-radius: 0;
+                  display: block;
+                  height: 30px;
+                  margin: auto;
+                  transition: 0.6s;
+                  width: 30px;
+                }
+              }
+            }
           }
         }
       }

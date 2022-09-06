@@ -121,11 +121,15 @@
             </th>
           </tr>
           <tr class="tr-course">
-            <td class="td-course tag" achei><p>Nome do curso</p></td>
+            <td class="td-course tag" achei>
+              <p>Nome do curso</p>
+            </td>
             <td class="td-course"><input class="name" type="text"></td>
           </tr>
           <tr class="tr-course">
-            <td class="td-course tag" achei><p>Status do curso</p></td>
+            <td class="td-course tag" achei>
+              <p>Status do curso</p>
+            </td>
             <td class="td-course">
               <label>
                 <input name="status" class="name" type="radio">
@@ -133,7 +137,59 @@
               </label>
             </td>
           </tr>
-
+          <tr class="tr-course">
+            <td class="td-course tag" achei>
+              <p>Cores do curso</p>
+            </td>
+            <td class="td-course">
+              <input class="course-colors primary" type="color">
+              <input class="course-colors secondary" type="color">
+            </td>
+          </tr>
+          <tr class="tr-course">
+            <td class="td-course tag" achei>
+              <p>Imagens alternativas</p>
+            </td>
+            <td class="td-course"><input class="alt-images" type="text"></td>
+          </tr>
+          <tr class="tr-course">
+            <td class="td-course td-table-spots">
+              <table class="table-spots">
+                <tr class="tr-spots-title">
+                  <th class="th-spots-title">
+                    <p>
+                      Spots do curso de HTML & CSS
+                    </p>
+                  </th>
+                </tr>
+                <tr class="tr-spots">
+                    <td class="td-spots tag"><p>Tarefa</p></td>
+                    <td class="td-spots tag"><p>imagem</p></td>
+                    <td class="td-spots tag"><p>Link</p></td>
+                    <td class="td-spots tag"><p>Descrição</p></td>
+                    <td class="td-spots tag"><p>Alt (imagem)</p></td>
+                </tr>
+                <tr class="tr-spots">
+                    <td class="td-spots tag"><p>1</p></td>
+                    <td class="td-spots input-image">
+                      <input id="img-n-task" class="input-spot-image" type="checkbox">
+                      <label for="img-n-task" class="label-spot-image"></label>
+                    </td>
+                    <td class="td-spots"><input id="link-n-taks" type="text"></td>
+                    <td class="td-spots"><input id="description-n-taks" type="text"></td>
+                    <td class="td-spots"><input id="alt-n-task" type="text"></td>
+                </tr>
+                <tr class="tr-spots tr-spots-button">
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td class="td-spots-button"><p>+</p></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
         </table>
       </section>
     </main>
