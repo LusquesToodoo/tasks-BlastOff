@@ -24,6 +24,7 @@ img {
 }
 
 .header {
+  display: none;
   width: 100%;
 }
 @media screen and (max-width: 780px) {
@@ -231,6 +232,9 @@ img {
     padding-top: 100px;
   }
 }
+.main .all-courses {
+  display: none;
+}
 .main .all-courses .course-list {
   display: flex;
   flex-wrap: wrap;
@@ -305,9 +309,6 @@ img {
   height: 6rem;
   margin-top: 10px;
   overflow: hidden;
-}
-.main .new-courses {
-  display: none;
 }
 .main .new-courses .table-courses {
   width: 100%;
@@ -473,6 +474,21 @@ img {
   margin: auto;
   transition: 0.6s;
   width: 30px;
+}
+.main .new-courses .button-create-json {
+  background-color: #fb798d;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 21px;
+  margin: auto;
+  padding: 20px 100px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  width: fit-content;
+}
+.main .new-courses .button-create-json:active {
+  background-color: #f93150;
 }
 
 .footer {

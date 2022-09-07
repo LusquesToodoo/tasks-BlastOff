@@ -42,6 +42,7 @@ img {
 }
 
 .header {
+  display: none; // LIMAO
   width: 100%;
   @include media(780px) {
     position: fixed;
@@ -257,7 +258,7 @@ img {
     padding-top: 100px;
   }
   & .all-courses {
-    // display: none; //Limao
+    display: none; //Limao
     & .course-list {
       display: flex;
       flex-wrap: wrap;
@@ -340,7 +341,7 @@ img {
     }
   }
   & .new-courses {
-    display: none;
+    // display: none;
     & .table-courses {
       width: 100%;
       display: block;
@@ -519,6 +520,21 @@ img {
             }
           }
         }
+      }
+    }
+    & .button-create-json{
+      background-color: $bd-pink-light;
+      border-radius: 10px;
+      color: $text-color-light;
+      cursor: pointer;
+      font-size: 21px;
+      margin: auto;
+      padding: 20px 100px;
+      text-transform: uppercase;
+      transition: .3s;
+      width: fit-content;
+      &:active{
+        background-color: $bd-pink-dark;
       }
     }
   }
