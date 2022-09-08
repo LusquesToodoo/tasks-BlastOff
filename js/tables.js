@@ -1,6 +1,7 @@
 let idCourses = 0;
 let idRow = 0;
 const buttonCreateJson = document.querySelector(".button-create-json");
+const address = document.querySelector(".new-courses");
 
 class CourseList {
   constructor(course, i) {
@@ -8,7 +9,6 @@ class CourseList {
   }
 }
 class Course {
-  address = document.querySelector(".new-courses");
   constructor(
     colorDark,
     colorLight,
@@ -28,8 +28,8 @@ class Course {
   }
 
   addTable() {
-    this.address.insertAdjacentHTML("beforeend", this.createTable());
-    this.address.appendChild(buttonCreateJson);
+    address.insertAdjacentHTML("beforeend", this.createTable());
+    address.appendChild(buttonCreateJson);
     this.table = document.querySelector(`#course-${idCourses}`);
     idCourses++;
     this.insertEvents();
@@ -156,6 +156,29 @@ class Course {
       tbody.appendChild(parentNode);
     });
   }
+
+  createNewJson(table) {
+    const allSpots = () => {
+      const arraySpots = [];
+      const spots = table.querySelectorAll(".tr-spots.task");
+      spots.forEach((tr) => {
+        const objSpot = new Spot();
+        objSpot.createNewJson(tr);
+        objSpot.link ? arraySpots.push(objSpot) : "";
+      });
+      return arraySpots;
+    };
+    const cell = (selector) => {
+      return table.querySelector(selector);
+    };
+    this.colorDark = cell(".course-colors.primary").value;
+    this.colorLight = cell(".course-colors.secondary").value;
+    this.initialDigit = cell(".initial-digit").value;
+    this.imgsAlternative = cell(".alt-images").value;
+    this.name = cell(".name").value;
+    this.spots = allSpots();
+    this.status = cell(".status").checked;
+  }
 }
 class Spot {
   constructor(alt, description, image, link) {
@@ -198,58 +221,59 @@ class Spot {
       <label for="${"img-" + idRow}" class="label-spot-image"></label>
     </td>
     <td class="td-spots">
-      <input id="link-new-task" type="text"
+      <input class="link-new-task" type="text"
       value="${this.link || ""}">
     </td>
     <td class="td-spots">
-      <input id="description-new-task" type="text"
+      <input class="description-new-task" type="text"
       value="${this.description || ""}">
     </td>
     <td class="td-spots">
-      <input id="alt-new-task" type="text"
+      <input class="alt-new-task" type="text"
       value="${this.alt || ""}">
     </td>
   </tr>`;
     idRow++;
     return row;
   }
+
+  createNewJson(tableRow) {
+    const cell = (selector) => {
+      return tableRow.querySelector(selector);
+    };
+    this.alt = cell(".alt-new-task").value;
+    this.description = cell(".description-new-task").value;
+    this.image = cell("[id^='img-']").checked;
+    this.link = cell(".link-new-task").value;
+    return this;
+  }
 }
 
-const spotTableNewCourse = [
-  new Spot("alt", "description", /*"image"*/ false, "link"),
-  new Spot(),
-];
-const tableNewCourse = new Course("#000","#fff",1,"","Novo ++",spotTableNewCourse,false,);
+function updateArchiveJson(newJson) {
+  const data = newJson;
+  console.log(JSON.stringify(data));
+}
 
-tableNewCourse.addTable();
-tableNewCourse.addTable();
+const spotTableNewCourse = [new Spot()];
+const tableNewCourse = new Course(
+  "#000",
+  "#fff",
+  1,
+  "",
+  "Novo ++",
+  spotTableNewCourse,
+  false,
+);
+
 tableNewCourse.addTable();
 
 buttonCreateJson.addEventListener("click", () => {
-
-
   const newJson = [];
-  const allTables = document.querySelectorAll("table[id^='course-']")
-  allTables.forEach((table)=>{
-    const allSpots = ()=>{
-      const arraySpots = [];
-      const spots = table.querySelectorAll('.tr-spots.task')
-      spots.forEach((tr)=>[
-        // const
-        
-      ])
-      return 'teste'
-    };
-    const cell = (selector)=>{return table.querySelector(selector)}
-    let colorDark = cell('.course-colors.primary').value;
-    let colorLight = cell('.course-colors.secondary').value;
-    let initialDigit = cell('.initial-digit').value;
-    let imgsAlternative = cell('.alt-images').value;
-    let name = cell('.name').value;
-    let spots = allSpots();
-    let status = cell('.status').checked;
-    debugger
-  })
-
-  
+  const allTables = document.querySelectorAll("table[id^='course-']");
+  allTables.forEach((table) => {
+    const objCourse = new Course();
+    objCourse.createNewJson(table);
+    objCourse.spots[0] ? newJson.push(objCourse) : "";
+  });
+  updateArchiveJson(newJson);
 });

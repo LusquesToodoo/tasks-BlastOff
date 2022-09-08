@@ -42,7 +42,7 @@ img {
 }
 
 .header {
-  display: none; // LIMAO
+  // display: none; // LIMAO
   width: 100%;
   @include media(780px) {
     position: fixed;
@@ -258,7 +258,7 @@ img {
     padding-top: 100px;
   }
   & .all-courses {
-    display: none; //Limao
+    // display: none; //Limao
     & .course-list {
       display: flex;
       flex-wrap: wrap;
@@ -554,4 +554,12 @@ img {
     color: #fff;
     font-size: clamp(28px, 30px, 36px);
   }
+}
+
+.title-temporaly{
+  font: {
+    size: 21px;
+    weight: bolder;
+  }
+  margin: 50px 0 15px;
 }

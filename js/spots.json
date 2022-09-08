@@ -1,0 +1,296 @@
+[
+  {
+    "colorDark": "",
+    "colorLight": "",
+    "initialDigit": "1",
+    "imgsAlternative": "",
+    "name": "Lógica",
+    "spots": [
+      {
+        "alt": "Tarefa 1",
+        "description": "Calcula salário total de funcionário com um bonûs de vendas.",
+        "image": false,
+        "link": "https://github.com/LusquesToodoo/LucasSilva-BlastOff/blob/main/Curso%20-%20LOO/tarefas/tarefa%201.ALG"
+      },
+      {
+        "alt": "Tarefa 2",
+        "description": "Informa média de Km/L de acordo com dados entrehues pelo usuário.",
+        "image": false,
+        "link": "https://github.com/LusquesToodoo/LucasSilva-BlastOff/blob/main/Curso%20-%20LOO/tarefas/tarefa%202.ALG"
+      },
+      {
+        "alt": "Tarefa 3",
+        "description": "Avalia se financiamento será concedido ou negado.",
+        "image": false,
+        "link": "https://github.com/LusquesToodoo/LucasSilva-BlastOff/blob/main/Curso%20-%20LOO/tarefas/tarefa%203.ALG"
+      },
+      {
+        "alt": "Tarefa 4",
+        "description": "Avalia se conta do banco do cliente tem saldo suficiente para descontar valor de cheque.",
+        "image": false,
+        "link": "https://github.com/LusquesToodoo/LucasSilva-BlastOff/blob/main/Curso%20-%20LOO/tarefas/tarefa%204.ALG"
+      }
+    ],
+    "status": false
+  },
+  {
+    "colorDark": "#E44800",
+    "colorLight": "#FF9665",
+    "initialDigit": "1",
+    "imgsAlternative": "",
+    "name": "HTML & CSS",
+    "spots": [
+      {
+        "alt": "Tarefa 1",
+        "description": "Reproduzindo a página da foto usando medidas absolutas.",
+        "image": true,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%201/index.html"
+      },
+      {
+        "alt": "Tarefa 2",
+        "description": "Reproduzindo a página da foto usando medidas relativas.",
+        "image": true,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%202/index.html"
+      },
+      {
+        "alt": "Tarefa 3",
+        "description": "Reproduzindo a página da foto usando medidas absolutas e imagem na borda.",
+        "image": true,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%203/index.html"
+      },
+      {
+        "alt": "Tarefa 4",
+        "description": "Prática da propriedade float.",
+        "image": true,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%204/index.html"
+      },
+      {
+        "alt": "Tarefa 5",
+        "description": "Desenvolvendo layout com propriedades estudadas até então.",
+        "image": true,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%205/index.html"
+      },
+      {
+        "alt": "Tarefa 6",
+        "description": "Prática com elementos de tabela.",
+        "image": true,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%206/index.html"
+      },
+      {
+        "alt": "Tarefa 7",
+        "description": "Alterando layout anterior para um maos específico.",
+        "image": true,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%207/index.html"
+      },
+      {
+        "alt": "Tarefa 8",
+        "description": "Desenvolvendo tabela com o layout da foto.",
+        "image": true,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%208/index.html"
+      },
+      {
+        "alt": "Tarefa 9",
+        "description": "Desenvolvendo tabela customizada.",
+        "image": true,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%209/index.html"
+      },
+      {
+        "alt": "Tarefa 10",
+        "description": "Desenvolvendo primeiro formulário.",
+        "image": true,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%2010/index.html"
+      },
+      {
+        "alt": "Tarefa 11",
+        "description": "Desenvolvendo dormulário dentro de uma tabela.",
+        "image": true,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%2011/index.html"
+      },
+      {
+        "alt": "Tarefa 12",
+        "description": "Prática com listas ordenadas.",
+        "image": true,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%2012/index.html"
+      },
+      {
+        "alt": "Tarefa 13",
+        "description": "Reproduzindo lista ordenada presente na foto.",
+        "image": true,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%2013/index.html"
+      },
+      {
+        "alt": "Tarefa 14",
+        "description": "Prática de flexbox e lista.",
+        "image": true,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%2014/index.html"
+      },
+      {
+        "alt": "Tarefa 15",
+        "description": "Desenvolvendo layout do Yahoo! de 2008 com display grid.",
+        "image": true,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%2015/index.html"
+      },
+      {
+        "alt": "Tarefa 16",
+        "description": "Desenvolvendo layout do MercadoLivre! de 2015.",
+        "image": true,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web/tarefas/tarefa%2016/index.html"
+      }
+    ],
+    "status": true
+  },
+  {
+    "colorDark": "#000",
+    "colorLight": "#fff",
+    "initialDigit": "1",
+    "imgsAlternative": "",
+    "name": "Novo ++",
+    "spots": [
+      {
+        "alt": "Tarefa 17",
+        "description": "",
+        "image": false,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web%20-%20javaScript/tarefas/tarefa_1/index.html"
+      },
+      {
+        "alt": "Tarefa 18",
+        "description": "",
+        "image": false,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web%20-%20javaScript/tarefas/tarefa%202/index.html"
+      },
+      {
+        "alt": "Tarefa 19",
+        "description": "",
+        "image": false,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web%20-%20javaScript/tarefas/tarefa%203/index.html"
+      },
+      {
+        "alt": "Tarefa 20",
+        "description": "",
+        "image": false,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web%20-%20javaScript/tarefas/tarefa%204/index.html"
+      },
+      {
+        "alt": "Tarefa 21",
+        "description": "",
+        "image": false,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web%20-%20javaScript/tarefas/tarefa%205/index.html"
+      },
+      {
+        "alt": "Tarefa 22",
+        "description": "",
+        "image": false,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web%20-%20javaScript/tarefas/tarefa%206/index.html"
+      },
+      {
+        "alt": "Tarefa 23",
+        "description": "",
+        "image": false,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web%20-%20javaScript/tarefas/tarefa%207/index.html"
+      },
+      {
+        "alt": "Tarefa 24",
+        "description": "",
+        "image": false,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web%20-%20javaScript/tarefas/tarefa%208/index.html"
+      },
+      {
+        "alt": "",
+        "description": "",
+        "image": false,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web%20-%20javaScript/tarefas/tarefa%209/index.html"
+      },
+      {
+        "alt": "",
+        "description": "",
+        "image": false,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web%20-%20javaScript/tarefas/tarefa%2010/index.html"
+      },
+      {
+        "alt": "",
+        "description": "",
+        "image": false,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web%20-%20javaScript/tarefas/tarefa%2011/index.html"
+      },
+      {
+        "alt": "",
+        "description": "",
+        "image": false,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web%20-%20javaScript/tarefas/tarefa%2012/index.html"
+      },
+      {
+        "alt": "",
+        "description": "",
+        "image": false,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web%20-%20javaScript/tarefas/tarefa%2013/index.html"
+      },
+      {
+        "alt": "",
+        "description": "",
+        "image": false,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web%20-%20javaScript/tarefas/tarefa%2030/index.html"
+      },
+      {
+        "alt": "",
+        "description": "",
+        "image": false,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web%20-%20javaScript/tarefas/tarefa%2031/index.html"
+      },
+      {
+        "alt": "",
+        "description": "",
+        "image": false,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web%20-%20javaScript/tarefas/tarefa%2032/index.html"
+      },
+      {
+        "alt": "",
+        "description": "",
+        "image": false,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web%20-%20javaScript/tarefas/tarefa%2033/index.html"
+      },
+      {
+        "alt": "",
+        "description": "",
+        "image": false,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web%20-%20javaScript/tarefas/tarefa%2034/index.html"
+      },
+      {
+        "alt": "",
+        "description": "",
+        "image": false,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web%20-%20javaScript/tarefas/tarefa%2035/index.html"
+      },
+      {
+        "alt": "",
+        "description": "",
+        "image": false,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web%20-%20javaScript/tarefas/tarefa%2036/index.html"
+      },
+      {
+        "alt": "",
+        "description": "",
+        "image": false,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web%20-%20javaScript/tarefas/tarefa%2037/index.html"
+      },
+      {
+        "alt": "",
+        "description": "",
+        "image": false,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web%20-%20javaScript/tarefas/tarefa%2038/index.html"
+      },
+      {
+        "alt": "",
+        "description": "",
+        "image": false,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web%20-%20javaScript/tarefas/tarefa%2038.2/index.html"
+      },
+      {
+        "alt": "",
+        "description": "",
+        "image": false,
+        "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web%20-%20javaScript/tarefas/tarefa%2038.3/index.html"
+      }
+    ],
+    "status": false
+  }
+]

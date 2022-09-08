@@ -24,7 +24,6 @@ img {
 }
 
 .header {
-  display: none;
   width: 100%;
 }
 @media screen and (max-width: 780px) {
@@ -231,9 +230,6 @@ img {
     min-height: calc(100vh - 100px);
     padding-top: 100px;
   }
-}
-.main .all-courses {
-  display: none;
 }
 .main .all-courses .course-list {
   display: flex;
@@ -505,6 +501,12 @@ img {
 .footer p {
   color: #fff;
   font-size: 30px;
+}
+
+.title-temporaly {
+  font-size: 21px;
+  font-weight: bolder;
+  margin: 50px 0 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
