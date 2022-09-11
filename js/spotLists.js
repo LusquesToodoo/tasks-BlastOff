@@ -143,7 +143,7 @@ const dataJson = `
   {
     "colorDark": "#000",
     "colorLight": "#fff",
-    "initialDigit": "17",
+    "initialDigit": "1",
     "imgsAlternative": "",
     "name": "JavaScript",
     "spots": [
@@ -290,6 +290,52 @@ const dataJson = `
         "description": "",
         "image": false,
         "link": "https://lusquestoodoo.github.io/LucasSilva-BlastOff/Curso%20-%20Web%20-%20javaScript/tarefas/tarefa%2038.3/index.html"
+      }
+    ],
+    "status": false
+  },
+  {
+    "colorDark": "#000",
+    "colorLight": "#fff",
+    "initialDigit": "39",
+    "imgsAlternative": "",
+    "name": "SASS",
+    "spots": [
+      {
+        "alt": "",
+        "description": "Desenvolvendo primeiro css transpilado com SASS.",
+        "image": false,
+        "link": "https://github.com/LusquesToodoo/LucasSilva-BlastOff/tree/main/Curso%20-%20Web%20-%20SASS/exerc%C3%ADcios/tarefas/tarefa%2039"
+      },
+      {
+        "alt": "",
+        "description": "Prática de variáveis com SASS.",
+        "image": false,
+        "link": "https://github.com/LusquesToodoo/LucasSilva-BlastOff/tree/main/Curso%20-%20Web%20-%20SASS/exerc%C3%ADcios/tarefas/tarefa%2040"
+      },
+      {
+        "alt": "",
+        "description": "Prática de placeholder's com SASS.",
+        "image": false,
+        "link": "https://github.com/LusquesToodoo/LucasSilva-BlastOff/tree/main/Curso%20-%20Web%20-%20SASS/exerc%C3%ADcios/tarefas/tarefa%2041"
+      },
+      {
+        "alt": "",
+        "description": "Usando operações para converter px em rem.",
+        "image": false,
+        "link": "https://github.com/LusquesToodoo/LucasSilva-BlastOff/tree/main/Curso%20-%20Web%20-%20SASS/exerc%C3%ADcios/tarefas/tarefa%2042"
+      },
+      {
+        "alt": "",
+        "description": "Prática de mixin com SASS.",
+        "image": false,
+        "link": "https://github.com/LusquesToodoo/LucasSilva-BlastOff/tree/main/Curso%20-%20Web%20-%20SASS/exerc%C3%ADcios/tarefas/tarefa%2043"
+      },
+      {
+        "alt": "",
+        "description": "Desenvolendo funções com SASS.",
+        "image": false,
+        "link": "https://github.com/LusquesToodoo/LucasSilva-BlastOff/tree/main/Curso%20-%20Web%20-%20SASS/exerc%C3%ADcios/tarefas/tarefa%2044"
       }
     ],
     "status": false
