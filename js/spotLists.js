@@ -143,7 +143,7 @@ const dataJson = `
   {
     "colorDark": "#000",
     "colorLight": "#fff",
-    "initialDigit": "1",
+    "initialDigit": "17",
     "imgsAlternative": "",
     "name": "JavaScript",
     "spots": [
