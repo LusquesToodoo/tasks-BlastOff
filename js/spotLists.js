@@ -393,3 +393,4 @@ function insertSpotList(course) {
 dataObj.forEach((course)=>{
   insertCourseList(course)
 })
+
